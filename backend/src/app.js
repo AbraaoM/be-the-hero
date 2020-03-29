@@ -1,6 +1,7 @@
 const express  = require('express')
 const cors = require('cors')  //Biblioteca que faz as rotas de acesso url
 const routes = require('./routes')
+const {errors} = require('celebrate')
 
 const app = express(); //Utilizado pra envio e recebimento de requisições HTTP
 
@@ -9,7 +10,9 @@ app.use(express.json())
 
 app.use(routes)
 
-app.listen(3333)
+app.use(errors())
+
+module.exports = app
 /**
  * Rota / Recurso
  */
