@@ -44,3 +44,36 @@ A primeira tela a ser exibida para o usuário exibe todas as demandas cadastrada
 ### Detalhes
 Essa é a tela que apresenta detalhes sobre uma demanda listada na tela home, é possível ao herói entrar em contato com a instituição por meio de whatsapp e e-mail. </br>
 <img width="164" height="340" src="https://raw.githubusercontent.com/AbraaoM/be-the-hero/master/screenshots/caso-mobile.jpeg">
+
+# Rodando a aplicação
+
+- Dependências:
+    - node
+    - npm
+    - yarn
+    - sqlite3  
+
+- Clonar esse repositório
+- Backend
+    - Servidor em localhost:3333
+```bash
+cd backend
+yarn
+yarn start
+```
+- Frontend
+    - Roda em localhost:3000
+```bash
+cd frontend
+yarn
+yarn start
+```
+
+- Mobile
+    - Expo deve estar configurado em um dispositivo externo ou emulador (https://docs.expo.io/guides/)
+    - Seguir instruções exibidas pelo terminal
+```bash
+cd mobile
+yarn
+yarn start
+```
